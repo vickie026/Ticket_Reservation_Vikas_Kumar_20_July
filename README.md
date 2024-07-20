@@ -42,11 +42,11 @@ The bus reservation system portal is a web-based application that enables users 
 * Update the port number, username and password as per your local database config.
 
 ```
-      #db specific properties
-      spring.datasource.url=jdbc:mysql://localhost:3306/busdb
-      spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-      spring.datasource.username=root
-      spring.datasource.password=root
+spring.datasource.url=jdbc:h2:mem:testdb
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
 
       #ORM s/w specific properties
       spring.jpa.hibernate.ddl-auto=update
