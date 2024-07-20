@@ -60,4 +60,3 @@ spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
  
 `http://localhost:8082/swagger-ui/index.html`
 
-Assumptions
